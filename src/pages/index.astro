@@ -1,11 +1,81 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import { Rocket, Construction, Clock, Sparkles } from "@lucide/astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Aregimplex — Coming Soon"
+  description="Aregimplex is preparing something new. Our official website is coming soon."
+>
+  <!-- Main Section -->
+  <section class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+      <div class="max-w-lg">
+        <!-- Icon -->
+        <div class="mb-8">
+          <div
+            class="inline-flex items-center justify-center rounded-full bg-primary/10 p-6"
+          >
+            <Rocket class="w-14 h-14 text-primary" />
+          </div>
+        </div>
+
+        <!-- Brand -->
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          Aregimplex
+        </h1>
+
+        <p class="text-base md:text-lg opacity-80 mb-8">
+          Our official website is currently under development.
+          <br />
+          We are building a reliable and modern digital presence.
+        </p>
+
+        <!-- Status Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+          <div class="card bg-base-100 shadow-sm">
+            <div class="card-body items-center text-center p-4">
+              <Construction class="w-6 h-6 text-primary mb-2" />
+              <p class="text-sm font-medium">In Development</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm">
+            <div class="card-body items-center text-center p-4">
+              <Clock class="w-6 h-6 text-primary mb-2" />
+              <p class="text-sm font-medium">Launching Soon</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm">
+            <div class="card-body items-center text-center p-4">
+              <Sparkles class="w-6 h-6 text-primary mb-2" />
+              <p class="text-sm font-medium">New Experience</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider opacity-40">Status</div>
+
+        <!-- Short Statement -->
+        <p class="text-sm opacity-70 leading-relaxed">
+          Aregimplex operates as a professional organization with a focus on
+          quality, structure, and long-term value. This page will be replaced
+          with our full website soon.
+        </p>
+
+        <!-- Footer -->
+        <div class="mt-10">
+          <span class="badge badge-outline badge-primary px-5 py-3">
+            Website Under Maintenance
+          </span>
+
+          <p class="mt-4 text-xs opacity-60">
+            © {new Date().getFullYear()} Aregimplex. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

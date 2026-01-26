@@ -1,0 +1,43 @@
+---
+import { Mail, Send, Lock } from "@lucide/astro";
+---
+
+<!-- Newsletter Section -->
+<section class="bg-base-100 py-16">
+  <div class="container mx-auto px-4">
+    <div class="card bg-primary text-primary-content max-w-2xl mx-auto">
+      <div class="card-body items-center text-center">
+        <div class="avatar placeholder mb-4">
+          <div class="bg-primary-content text-primary rounded-full w-16">
+            <Mail class="w-8 h-8" />
+          </div>
+        </div>
+        
+        <h2 class="card-title text-3xl mb-2">Stay Updated</h2>
+        <p class="mb-6">
+          Be the first to know when we launch. Join our waitlist for exclusive early access.
+        </p>
+        
+        <div class="form-control w-full max-w-md">
+          <div class="join">
+            <input 
+              type="email" 
+              placeholder="your@email.com" 
+              class="input input-bordered join-item flex-1" 
+            />
+            <button class="btn btn-neutral join-item">
+              <Send class="w-5 h-5" />
+              Subscribe
+            </button>
+          </div>
+          <label class="label">
+            <span class="label-text-alt flex items-center gap-1">
+              <Lock class="w-3 h-3" />
+              We respect your privacy
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
