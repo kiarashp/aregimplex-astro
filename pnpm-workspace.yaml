@@ -1,0 +1,6 @@
+# pnpm settings for this project.
+# Packages allowed to run their own setup script when installed.
+# pnpm blocks this by default (a safety feature against bad packages).
+allowBuilds:
+  esbuild: true
+  sharp: true
